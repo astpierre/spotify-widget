@@ -52,6 +52,7 @@ class SpotifyWidget(QMainWindow, Ui_SpotifyWidget):
         self.prevPB.clicked.connect(self.prevPressed)
         self.volSlider.valueChanged.connect(self.volSliderMoved)
         self.changeDeviceCombo.currentIndexChanged.connect(self.deviceComboIndexChanged)
+        self.searchEdit.textEdited.connect(self.searching)
 
         # Set profile picture
         cp = self.sp.current_user()
@@ -139,6 +140,15 @@ class SpotifyWidget(QMainWindow, Ui_SpotifyWidget):
             self.sp.start_playback()
             self.playingNow = True
         return
+
+    def searching(self):
+        query = self.searchEdit.text()
+        results = self.sp.search(query, limit=3, offset=0, type='track')
+        for i in results["tracks"]["items"]:
+            print(i["name"])
+
+
+
 
 
 if __name__ == "__main__":

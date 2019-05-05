@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>477</width>
-    <height>485</height>
+    <width>466</width>
+    <height>543</height>
    </rect>
   </property>
   <property name="palette">
@@ -437,8 +437,8 @@
   <widget class="QPushButton" name="pausePlay">
    <property name="geometry">
     <rect>
-     <x>170</x>
-     <y>390</y>
+     <x>160</x>
+     <y>420</y>
      <width>141</width>
      <height>25</height>
     </rect>
@@ -460,8 +460,8 @@
   <widget class="QLabel" name="trackTitleLabel">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>300</y>
+     <x>40</x>
+     <y>330</y>
      <width>381</width>
      <height>31</height>
     </rect>
@@ -477,6 +477,9 @@
    </property>
    <property name="frameShape">
     <enum>QFrame::WinPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
    </property>
    <property name="text">
     <string/>
@@ -520,8 +523,8 @@
   <widget class="QLabel" name="trackArtistLabel">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>340</y>
+     <x>50</x>
+     <y>370</y>
      <width>361</width>
      <height>31</height>
     </rect>
@@ -539,6 +542,9 @@
    <property name="frameShape">
     <enum>QFrame::Panel</enum>
    </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
    <property name="text">
     <string/>
    </property>
@@ -549,8 +555,8 @@
   <widget class="QLabel" name="albumArtLabel">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>80</y>
+     <x>130</x>
+     <y>120</y>
      <width>200</width>
      <height>200</height>
     </rect>
@@ -582,8 +588,8 @@
   <widget class="QSlider" name="volSlider">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>450</y>
+     <x>20</x>
+     <y>510</y>
      <width>131</width>
      <height>16</height>
     </rect>
@@ -598,8 +604,8 @@
   <widget class="QLabel" name="volLabel">
    <property name="geometry">
     <rect>
-     <x>180</x>
-     <y>450</y>
+     <x>170</x>
+     <y>510</y>
      <width>31</width>
      <height>17</height>
     </rect>
@@ -611,8 +617,8 @@
   <widget class="QLabel" name="creditLabel">
    <property name="geometry">
     <rect>
-     <x>300</x>
-     <y>450</y>
+     <x>290</x>
+     <y>510</y>
      <width>171</width>
      <height>31</height>
     </rect>
@@ -631,8 +637,8 @@
   <widget class="QPushButton" name="prevPB">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>170</y>
+     <x>40</x>
+     <y>200</y>
      <width>51</width>
      <height>21</height>
     </rect>
@@ -649,8 +655,8 @@
   <widget class="QPushButton" name="nextPB">
    <property name="geometry">
     <rect>
-     <x>380</x>
-     <y>170</y>
+     <x>370</x>
+     <y>200</y>
      <width>51</width>
      <height>21</height>
     </rect>
@@ -664,7 +670,7 @@
     <string>--&gt;</string>
    </property>
   </widget>
-  <widget class="QLabel" name="volLabel_2">
+  <widget class="QLabel" name="deviceLabel">
    <property name="geometry">
     <rect>
      <x>310</x>
@@ -675,6 +681,29 @@
    </property>
    <property name="text">
     <string>Device:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="searchLabel">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>80</y>
+     <width>51</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Search:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="searchEdit">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>80</y>
+     <width>301</width>
+     <height>25</height>
+    </rect>
    </property>
   </widget>
  </widget>
