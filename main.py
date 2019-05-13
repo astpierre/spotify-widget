@@ -23,8 +23,8 @@ from io import BytesIO
 import numpy as np
 
 # Spotify API ID and Key
-# CLIENTID = "2c63ae3585d34835b04b34971282a731"
-# CLIENTSECRET = "ed953ad432654ed796e9083db7174639"
+CLIENT_ID = "2c63ae3585d34835b04b34971282a731"
+CLIENT_SECRET = "ed953ad432654ed796e9083db7174639"
 
 class SpotifyWidget(QMainWindow, Ui_SpotifyWidget):
     def __init__(self, parent=None):
@@ -35,9 +35,7 @@ class SpotifyWidget(QMainWindow, Ui_SpotifyWidget):
         scope = 'user-read-private user-read-playback-state user-modify-playback-state user-top-read playlist-modify-private playlist-modify-public'
         redirect_uri = "http://localhost:8888/callback/"
         username = "andrew.stpierre3131"
-        token = util.prompt_for_user_token(username,
-                                           scope,
-                                           redirect_uri=redirect_uri)
+        token = util.prompt_for_user_token(username, scope, redirect_uri=redirect_uri)
         self.sp = spotipy.Spotify(auth=token)
         self.sp.trace = False
 
